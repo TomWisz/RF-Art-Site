@@ -32,12 +32,57 @@ a, a:hover, a:visited, a:active {
   border: 2px solid rgb(180, 145, 81);
   list-style: none;
   margin-left: 1rem;
-  margin-right: 2rem;
   padding: 1rem;
 }
 .nav-list .h1 + .h1 {
   margin-right: auto;
-  margin-left: 2rem;
+}
+
+.h1 img {
+  max-height: 2rem;
+}
+nav:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+nav li ul {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+  overflow: hidden;
+}
+nav li:hover ul {
+  padding: 15px 0;
+  padding-top: 2rem;
+  opacity: 1;
+  visibility: visible;
+  animation-name: swingdown;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.dropDown li {
+  padding: 0.75rem 0.5rem;
+  border: 2px solid rgb(180, 145, 81);
+}
+@keyframes swingdown {
+  0% {
+    opacity: 0.999999;
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotateX(-20deg) rotateY(5deg);
+    animation-timing-function: ease-in-out;
+  }
+  65% {
+    transform: rotateX(20deg) rotateY(-3deg);
+    animation-timing-function: ease-in-out;
+  }
 }
 h1{
   font-size: 2rem;
