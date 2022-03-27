@@ -11,8 +11,8 @@
 /* LAYOUT
 /*******************************************/
 body {
-  color: rgb(178, 193, 219)
-  ;
+  color: rgb(156, 185, 219);
+  font-family: 'Source Sans pro', 'Times New Roman', Times, serif;
   background: white;
   font-size: 62.5%;
 }
@@ -31,16 +31,17 @@ a, a:hover, a:visited, a:active {
 .nav-item {
   border: 2px solid rgb(180, 145, 81);
   list-style: none;
+  margin-left: 1rem;
   margin-right: 2rem;
   padding: 1rem;
 }
-.nav-list .h1 {
+.nav-list .h1 + .h1 {
   margin-right: auto;
   margin-left: 2rem;
 }
 h1{
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 main, header section {
   display: flex;
