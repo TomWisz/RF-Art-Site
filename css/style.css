@@ -57,7 +57,7 @@ nav:after {
 }
 nav li ul {
   position: absolute;
-  right: 0;
+  right: 5%;
   z-index: 1;
   width: 200px;
   opacity: 0;
@@ -66,8 +66,7 @@ nav li ul {
   overflow: hidden;
 }
 nav li:hover ul {
-  padding: 15px 0;
-  padding-top: 2rem;
+  padding-top: 1rem;
   opacity: 1;
   visibility: visible;
   animation-name: swingdown;
