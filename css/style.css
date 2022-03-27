@@ -93,6 +93,25 @@ main, header section {
   justify-content: center;
   margin: 2% 0;
 }
+main{
+  font-size: 2.5rem;
+  flex-direction: column;
+}
+.container {
+  border: 2px solid rgb(180, 145, 81);
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  justify-content: center;
+}
+.container section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.container img {
+  max-height: 300px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
