@@ -11,8 +11,9 @@
 /* LAYOUT
 /*******************************************/
 body {
-  color:rgb(180, 145, 81);
-  background: rgb(223, 233, 245);
+  color: rgb(178, 193, 219)
+  ;
+  background: white;
   font-size: 62.5%;
 }
 a, a:hover, a:visited, a:active {
@@ -28,7 +29,7 @@ a, a:hover, a:visited, a:active {
   justify-content: flex-end;
 }
 .nav-item {
-  border: 4px solid rgb(178, 193, 219);
+  border: 2px solid rgb(180, 145, 81);
   list-style: none;
   margin-right: 2rem;
   padding: 1rem;
